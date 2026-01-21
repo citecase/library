@@ -53,6 +53,69 @@
 [Effective District Courts Administration](https://jajharkhand.in/wp-content/uploads/2023/01/Effective-District-Courts-Administration.pdf)  
 [Criminal Court Rules](http://jajharkhand.in/wp/wp-content/uploads/2017/01/02_criminal_court_rules.pdf)  
 [Civil Court Rules](http://jajharkhand.in/wp/wp-content/uploads/2017/01/01_civil_court_rules.pdf)
+ 
 
-* 
+[JURIS RAY “JULY 2021 EDITION”](https://patnahighcourt.gov.in/bja/PDF/UPLOADED/BJA/233.PDF)  
+[Criminal Miscellany Volume 1](https://patnahighcourt.gov.in/bja/PDF/UPLOADED/BJA/179.PDF)  
+[Criminal Miscellany Vol 2](https://patnahighcourt.gov.in/bja/PDF/UPLOADED/BJA/180.PDF)  
+[Special edition of “JURIS RAY”](https://patnahighcourt.gov.in/bja/PDF/UPLOADED/BJA/140.PDF)
+
+[The Declaration of the Rights of Man and Citizens: A Contribution to Modern Constitutional History](http://files.libertyfund.org/files/1176/Jellinek_0162_EBk_v6.0.pdf)  
+[Constitutionalism: Ancient and Modern \[1947\]](http://files.libertyfund.org/files/2145/McIlwain_7850_EBk_v6.0.pdf)  
+[Dissertations on Early Law and Custom \[1883\]](http://files.libertyfund.org/files/2078/Maine_1369_EBk_v6.0.pdf)  
+[An Essay on Crimes and Punishments \[1764\]](http://files.libertyfund.org/files/2193/Beccaria_1476_EBk_v6.0.pdf)  
+[An Essay on the Trial by Jury \[1852\]](http://files.libertyfund.org/files/2181/Spooner_1474_EBk_v6.0.pdf)  
+[An Introduction to the Philosophy of Law \[1930\]](http://files.libertyfund.org/files/2222/Pound_1502_EBk_v6.0.pdf)  
+[Jurisprudence \[1825\]](http://files.libertyfund.org/files/1760/Mill_0886_EBk_v6.0.pdf)  
+[Ancient Law \[1861\]](http://files.libertyfund.org/files/2001/Maine_1376_EBk_v6.0.pdf)  
+[Commentaries on the Laws of England, Vol. 1 \[1753\]](http://files.libertyfund.org/files/2140/Blackstone_1387-01_EBk_v6.0.pdf)  
+[Commentaries on the Laws of England, Vol. 2 \[1753\]](http://files.libertyfund.org/files/2142/Blackstone_1387-02_EBk_v6.0.pdf)  
+[The Ideal Element in Law \[1958\]](http://files.libertyfund.org/files/671/Pound_0094_EBk_v6.0.pdf)  
+[The Story of the Law \[1927\]](http://files.libertyfund.org/files/680/Zane_0027_EBk_v6.0.pdf)  
+[Studies in History and Jurisprudence, Vol. 1 \[1901\]](http://files.libertyfund.org/files/2003/Bryce_1370-01_EBk_v6.0.pdf)  
+[Studies in History and Jurisprudence, Vol. 2 \[1901\]](http://files.libertyfund.org/files/2004/Bryce_1370-02_EBk_v6.0.pdf)  
+[The Genius of the Common Law \[1912\]](http://files.libertyfund.org/files/1954/Pollock_1381_EBk_v6.0.pdf)  
+[The Law of Torts (4th Edn.) \[1886\]](http://files.libertyfund.org/files/2123/Pollock_1428_EBk_v6.0.pdf)  
+[The Rights of War and Peace, Vol. 1 (Book I) \[1625\]](http://files.libertyfund.org/files/1425/Grotius_0138.01_EBk_v6.0.pdf)  
+[The Rights of War and Peace, Vol. 2 (Book II) \[1625\]](http://files.libertyfund.org/files/1947/Grotius_0138.02_EBk_v6.0.pdf)  
+[The Rights of War and Peace, Vol. 3 (Book III) \[1625\]](http://files.libertyfund.org/files/1427/Grotius_1032-03_EBk_v6.0.pdf)  
+[The History of English Law before the Time of Edward I, Vol. 1 \[1898\]](http://files.libertyfund.org/files/2313/Pollock_1541-01_EBk_v6.0.pdf)  
+[The History of English Law before the Time of Edward I, Vol. 2 \[1898\]](http://files.libertyfund.org/files/2314/Pollock_1541-02_EBk_v6.0.pdf)
+
+Constituent Assembly Debates: Ready Reckoner [Constituent Assembly Debates: Ready Reckoner](https://bombayhighcourt.gov.in/bhc/libweb/misc/coi/New-constituent_assembly_debates.html)
+
+Constitutional Amendments : Ready Reckoner [Constitutional Amendments : Ready Reckoner](https://bombayhighcourt.gov.in/bhc/libweb/misc/coi/New-constitution_amendment.html)
+
+Hobson Jobson Dictionary: [Hobson Jobson Dictionary](http://www.bibliomania.com/2/3/260)
+
+J.T. Molesworth \- Marathi English Dictionary: [J.T. Molesworth \- Marathi English Dictionary](http://dsal.uchicago.edu/dictionaries/molesworth/)
+
+Merriam-Webster’s Dictionary: [Merriam-Webster’s Dictionary](http://www.merriam-webster.com/)
+
+Monier Williams Sanskrit-English Dictionary: [Monier Williams Sanskrit-English Dictionary](http://www.sanskrit-lexicon.uni-koeln.de/monier/)
+
+Roget’s Thesaurus: [Roget’s Thesaurus](http://www.bibliomania.com/2/3/269/)
+
+Roget’s International Thesaurus of English Words and Phrases: [Roget’s International Thesaurus of English Words and Phrases](http://bartleby.com/110/)
+
+Soule’s Synonyms: [Soule’s Synonyms](http://www.bibliomania.com/2/3/258)
+
+Webster’s Dictionary (1913 Edition): [Webster’s Dictionary (1913 Edition)](http://www.bibliomania.com/2/3/257)
+
+Cardiff Index to Legal Abbreviations: [Cardiff Index to Legal Abbreviations](http://www.legalabbrevs.cardiff.ac.uk/)
+
+Glossary of Legal Terms: [Glossary of Legal Terms](https://www.uscourts.gov/glossary)
+
+Hyperdictionary of Electronic Commerce Law: [Hyperdictionary of Electronic Commerce Law](http://euro.ecom.cmu.edu/resources/elibrary/eclgloss.shtml)
+
+Intellectual Capital Glossary: [Intellectual Capital Glossary](http://euro.ecom.cmu.edu/resources/elibrary/icgloss.shtml)
+
+Law Dictionary: [Law Dictionary](http://dictionary.law.com/)
+
+Nolo’s Legal Glossary: [Nolo’s Legal Glossary](http://www.nolo.com/glossary.cfm)
+
+Nyay Vyavahar Kosh (Dictionary Of Legal Terms): [Nyay Vyavahar Kosh (Dictionary Of Legal Terms)](https://bombayhighcourt.gov.in/bhc/libweb/eboo 
+
+ 
+
 
