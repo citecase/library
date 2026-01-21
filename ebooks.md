@@ -1,3 +1,8 @@
+[Indian Penal Code by Thakore Dhirajlal Keshavlal - Criminal Law -](https://archive.org/details/in.ernet.dli.2015.36489/page/n9/mode/2up)
+[A Commentary On The Constitution Of India by Basu Durga Das](https://archive.org/details/dli.ernet.260072/page/n83/mode/2up)
+[Introduction To The Constitution Of India Ninth Edition](https://archive.org/details/in.ernet.dli.2015.103074/page/n33/mode/2up)
+[Indian Constitutional Law by MP Jain -3rd Edition](https://ia601701.us.archive.org/22/items/in.ernet.dli.2015.404149/2015.404149.Indian-Constitutional.pdf)
+[Mulla Code Of Civil Procedure Eighth Edition](https://archive.org/details/in.ernet.dli.2015.548582/page/n111/mode/2up)
 [Protecting Childhood: Towards a Safer and Enabling Environment – Reading Material for Jharkhand State Level Stakeholders Consultation on Safeguarding the Girl Child](https://jajharkhand.in/wp-content/uploads/2025/09/Reading-Material-for-web.pdf)  
 [BAIL — COMPARATIVE STUDY OF CrPC, 1973 AND BNSS, 2023](https://jajharkhand.in/wp-content/uploads/2025/07/Bail-Reading-Material-Web-.pdf)  
 [Cyber Crime Cases: Issues, Challenges & Solutions](https://jajharkhand.in/wp-content/uploads/2025/02/Cyber-Crime-web.pdf)  
