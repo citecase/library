@@ -1,3 +1,4 @@
+[Handbook on “Understanding the IBC: Key Jurisprudence and Practical Considerations](https://ibbi.gov.in/publication/study-materials)
 [Supreme Court of India on RTI Subject Wise (2005-2023](https://cic.gov.in/sites/default/files/court%20orders/SCF.pdf)
 [Landmark Cases of Supreme Court of India on RTI (2005-2023](https://cic.gov.in/sites/default/files/court%20orders/SCF%20final_merged.pdf)
 [Handbook on Child Rights and the Law](https://gsja.nic.in/gsjanew/files/20251125071622_Handbook_on_Child_Rights_and_the_Law.pdf)
