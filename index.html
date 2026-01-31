@@ -45,7 +45,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            min-height: 120px;
+            min-height: 100px;
         }
 
         .book-card:hover {
@@ -78,6 +78,23 @@
             background: rgba(15, 23, 42, 0.8);
             backdrop-filter: blur(4px);
         }
+
+        /* Brand Styling */
+        .brand-cite {
+            background-color: white;
+            color: black;
+            padding: 0 0.5rem;
+            border: 1px solid #e2e8f0;
+        }
+        .brand-case {
+            background-color: black;
+            color: white;
+            padding: 0 0.5rem;
+        }
+        .dark .brand-cite {
+            border-color: #334155;
+            background-color: #f1f5f9;
+        }
     </style>
 </head>
 <body class="min-h-screen">
@@ -86,63 +103,67 @@
     <div id="loading-overlay" class="fixed inset-0 z-50 flex items-center justify-center">
         <div class="text-center">
             <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
-            <p class="mt-4 text-white font-medium">Curating Legal Documents...</p>
+            <p class="mt-4 text-white font-medium uppercase tracking-widest">Loading Library...</p>
         </div>
     </div>
 
+    <!-- Theme Toggle (Floating) -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="theme-toggle" class="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors shadow-sm">
+            <i class="fas fa-moon dark:hidden text-slate-600"></i>
+            <i class="fas fa-sun hidden dark:inline text-yellow-400"></i>
+        </button>
+    </div>
+
     <!-- Header & Search -->
-    <header class="sticky top-0 z-40 search-container px-4 py-6 md:px-8">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-4">
+    <header class="search-container px-4 py-12 md:px-8">
+        <div class="max-w-4xl mx-auto flex flex-col items-center text-center gap-8">
+            <!-- Centralized Logo -->
             <div>
-                <h1 class="text-3xl font-bold serif flex items-center gap-3">
-                    <i class="fas fa-balance-scale text-blue-600"></i>
-                    CiteCase Library
+                <h1 class="text-5xl md:text-6xl font-bold serif flex items-center justify-center tracking-tight">
+                    <span class="brand-cite">Cite</span><span class="brand-case">Case</span>
                 </h1>
-                <p class="text-sm text-slate-500 mt-1" id="stats-label">Fetching records...</p>
+                <!-- Subtitle -->
+                <p class="text-sm text-slate-500 mt-6 uppercase tracking-[0.25em] font-bold" id="stats-label">
+                    LAW LIBRARY
+                </p>
             </div>
 
-            <div class="flex items-center gap-3 flex-1 md:max-w-md">
-                <div class="relative flex-1">
-                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                    <input 
-                        type="text" 
-                        id="search-input" 
-                        placeholder="Search titles..." 
-                        class="w-full pl-11 pr-4 py-3 bg-slate-100 dark:bg-slate-800 border-none rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition-all"
-                    >
-                </div>
-                <button id="theme-toggle" class="p-3 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors">
-                    <i class="fas fa-moon dark:hidden"></i>
-                    <i class="fas fa-sun hidden dark:inline"></i>
-                </button>
+            <!-- Centralized Search -->
+            <div class="w-full max-w-xl relative">
+                <i class="fas fa-search absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 text-lg"></i>
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Search titles..." 
+                    class="w-full pl-14 pr-6 py-4 bg-slate-100 dark:bg-slate-800 border-2 border-transparent focus:border-blue-500 rounded-2xl outline-none transition-all text-lg shadow-sm"
+                >
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-8 md:px-8">
-        <div id="library-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <main class="max-w-6xl mx-auto px-4 py-12 md:px-8">
+        <div id="library-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Cards injected here -->
         </div>
 
         <!-- Empty State -->
         <div id="empty-state" class="hidden text-center py-20">
-            <i class="fas fa-book-open text-6xl text-slate-300 mb-4"></i>
-            <h3 class="text-xl font-semibold">No documents found</h3>
-            <p class="text-slate-500">Try adjusting your search terms.</p>
+            <i class="fas fa-search text-6xl text-slate-200 dark:text-slate-800 mb-4"></i>
+            <h3 class="text-xl font-semibold text-slate-400">No documents found</h3>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="max-w-6xl mx-auto px-4 py-12 text-center text-sm text-slate-500 border-t border-slate-200 dark:border-slate-800 mt-12">
-        <p>© CiteCase Library - Open Legal Repository</p>
+    <footer class="max-w-6xl mx-auto px-4 py-12 text-center text-xs text-slate-400 uppercase tracking-widest border-t border-slate-100 dark:border-slate-800 mt-12">
+        <p>© CiteCase Library</p>
     </footer>
 
     <script>
         const MD_URL = 'https://raw.githubusercontent.com/citecase/library/refs/heads/main/ebooks.md';
         let allBooks = [];
 
-        // Initialization
         window.onload = async () => {
             initTheme();
             await fetchLibrary();
@@ -157,7 +178,7 @@
                 renderLibrary(allBooks);
             } catch (error) {
                 console.error("Fetch error:", error);
-                document.getElementById('stats-label').innerText = "Connection Error. Please refresh.";
+                document.getElementById('stats-label').innerText = "CONNECTION ERROR";
             }
         }
 
@@ -171,9 +192,14 @@
                     if (match) {
                         let cleanTitle = match[1].trim();
                         
-                        // REMOVE ARCHIVE TAGS: strips patterns like /PAGE/N111/MODE/2UP, etc.
+                        // REMOVE ARCHIVE TAGS
                         cleanTitle = cleanTitle.replace(/\s*[\d\/]*PAGE\/.*$/i, '')
                                                .replace(/\s*\/MODE\/.*$/i, '')
+                                               .trim();
+
+                        // REMOVE SYMBOLS and underscores
+                        cleanTitle = cleanTitle.replace(/_/g, ' ')
+                                               .replace(/\s+/g, ' ')
                                                .trim();
                         
                         return {
@@ -204,12 +230,12 @@
                 card.className = 'book-card p-6 rounded-2xl group cursor-pointer';
                 
                 card.innerHTML = `
-                    <div class="flex flex-col h-full">
-                        <div class="flex justify-between items-start mb-2">
-                             <h2 class="text-base font-semibold leading-snug group-hover:text-blue-600 transition-colors pr-4">
+                    <div class="flex flex-col justify-center h-full">
+                        <div class="flex justify-between items-start">
+                             <h2 class="text-[15px] font-semibold leading-relaxed group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors pr-4">
                                 ${book.title}
                             </h2>
-                            <i class="fas fa-external-link-alt text-xs text-slate-300 group-hover:text-blue-500 transition-colors mt-1 shrink-0"></i>
+                            <i class="fas fa-arrow-right text-[10px] text-slate-300 group-hover:text-blue-500 group-hover:translate-x-1 transition-all mt-1 shrink-0"></i>
                         </div>
                     </div>
                 `;
@@ -220,10 +246,10 @@
         }
 
         function updateStats(count) {
-            document.getElementById('stats-label').innerText = `${count} Legal documents indexed.`;
+            // Keep static label as requested
+            document.getElementById('stats-label').innerText = "LAW LIBRARY";
         }
 
-        // Search Logic
         document.getElementById('search-input').oninput = (e) => {
             const term = e.target.value.toLowerCase();
             const filtered = allBooks.filter(book => 
@@ -232,7 +258,6 @@
             renderLibrary(filtered);
         };
 
-        // Theme Toggle Logic
         function initTheme() {
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
                 document.documentElement.classList.add('dark');
