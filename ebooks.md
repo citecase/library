@@ -1,3 +1,4 @@
+[Mahatma Gandhi Assassination Case Judgment](https://images.assettype.com/barandbench-kannada/2023-01/e87f775e-205c-4875-a740-3ecc70f18ee0/Godse___TC___Judgmentt.pdf)
 [Indian Penal Code by Thakore Dhirajlal Keshavlal - Criminal Law -](https://archive.org/details/in.ernet.dli.2015.36489/page/n9/mode/2up)
 [A Commentary On The Constitution Of India by Basu Durga Das](https://archive.org/details/dli.ernet.260072/page/n83/mode/2up)
 [Introduction To The Constitution Of India Ninth Edition](https://archive.org/details/in.ernet.dli.2015.103074/page/n33/mode/2up)
