@@ -94,6 +94,7 @@
         .dark .brand-cite {
             border-color: #334155;
             background-color: #f1f5f9;
+            color: black;
         }
     </style>
 </head>
@@ -103,8 +104,13 @@
     <div id="loading-overlay" class="fixed inset-0 z-50 flex items-center justify-center">
         <div class="text-center">
             <div class="inline-block animate-spin rounded-full h-12 w-12 border-4 border-blue-500 border-t-transparent"></div>
-            <p class="mt-4 text-white font-medium uppercase tracking-widest">Loading Library...</p>
+            <p class="mt-4 text-white font-medium uppercase tracking-widest text-xs">Authenticating Repository...</p>
         </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 bg-slate-800 text-white text-xs font-bold uppercase tracking-widest rounded-full opacity-0 transition-opacity duration-300 hidden pointer-events-none">
+        Link copied to clipboard
     </div>
 
     <!-- Theme Toggle (Floating) -->
@@ -123,21 +129,22 @@
                 <h1 class="text-5xl md:text-6xl font-bold serif flex items-center justify-center tracking-tight">
                     <span class="brand-cite">Cite</span><span class="brand-case">Case</span>
                 </h1>
-                <!-- Subtitle -->
                 <p class="text-sm text-slate-500 mt-6 uppercase tracking-[0.25em] font-bold" id="stats-label">
                     LAW LIBRARY
                 </p>
             </div>
 
             <!-- Centralized Search -->
-            <div class="w-full max-w-xl relative">
-                <i class="fas fa-search absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 text-lg"></i>
-                <input 
-                    type="text" 
-                    id="search-input" 
-                    placeholder="Search titles..." 
-                    class="w-full pl-14 pr-6 py-4 bg-slate-100 dark:bg-slate-800 border-2 border-transparent focus:border-blue-500 rounded-2xl outline-none transition-all text-lg shadow-sm"
-                >
+            <div class="w-full max-w-xl">
+                <div class="relative">
+                    <i class="fas fa-search absolute left-5 top-1/2 -translate-y-1/2 text-slate-400 text-lg"></i>
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        placeholder="Search titles..." 
+                        class="w-full pl-14 pr-6 py-4 bg-slate-100 dark:bg-slate-800 border-2 border-transparent focus:border-blue-500 rounded-2xl outline-none transition-all text-lg shadow-sm"
+                    >
+                </div>
             </div>
         </div>
     </header>
@@ -146,6 +153,28 @@
     <main class="max-w-6xl mx-auto px-4 py-12 md:px-8">
         <div id="library-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Cards injected here -->
+        </div>
+
+        <!-- Unlock Section (Moved under titles) -->
+        <div id="unlock-container" class="mt-12 flex flex-col items-center border-t border-slate-100 dark:border-slate-800 pt-12">
+            <div id="unlock-section" class="flex flex-col items-center gap-4">
+                <p class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400">Unlock to Access Full Library</p>
+                <div class="flex items-center gap-2">
+                    <input 
+                        type="text" 
+                        id="lock-code" 
+                        placeholder="••••••••" 
+                        class="px-4 py-2 text-sm bg-transparent border-b border-slate-300 dark:border-slate-700 focus:border-blue-500 outline-none text-center tracking-widest"
+                    >
+                    <button id="unlock-btn" class="p-2 text-slate-400 hover:text-blue-600 transition-colors">
+                        <i class="fas fa-key"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="unlocked-badge" class="hidden text-[10px] text-green-500 font-bold uppercase tracking-[0.2em]">
+                <i class="fas fa-unlock-alt mr-1"></i> Full Access Granted
+            </div>
         </div>
 
         <!-- Empty State -->
@@ -163,6 +192,7 @@
     <script>
         const MD_URL = 'https://raw.githubusercontent.com/citecase/library/refs/heads/main/ebooks.md';
         let allBooks = [];
+        let isUnlocked = false;
 
         window.onload = async () => {
             initTheme();
@@ -175,7 +205,7 @@
                 const response = await fetch(MD_URL);
                 const text = await response.text();
                 parseMarkdown(text);
-                renderLibrary(allBooks);
+                renderLibrary();
             } catch (error) {
                 console.error("Fetch error:", error);
                 document.getElementById('stats-label').innerText = "CONNECTION ERROR";
@@ -191,67 +221,147 @@
                     const match = line.match(bookRegex);
                     if (match) {
                         let cleanTitle = match[1].trim();
-                        
-                        // REMOVE ARCHIVE TAGS
                         cleanTitle = cleanTitle.replace(/\s*[\d\/]*PAGE\/.*$/i, '')
                                                .replace(/\s*\/MODE\/.*$/i, '')
-                                               .trim();
-
-                        // REMOVE SYMBOLS and underscores
-                        cleanTitle = cleanTitle.replace(/_/g, ' ')
+                                               .replace(/_/g, ' ')
                                                .replace(/\s+/g, ' ')
                                                .trim();
                         
-                        return {
-                            title: cleanTitle,
-                            url: match[2].trim()
-                        };
+                        return { title: cleanTitle, url: match[2].trim() };
                     }
                     return null;
                 })
                 .filter(item => item !== null && item.title.length > 0);
-            
-            updateStats(allBooks.length);
         }
 
-        function renderLibrary(books) {
+        function renderLibrary(filteredBooks = null) {
             const grid = document.getElementById('library-grid');
             const emptyState = document.getElementById('empty-state');
+            const unlockContainer = document.getElementById('unlock-container');
             grid.innerHTML = '';
 
-            if (books.length === 0) {
+            let booksToDisplay = filteredBooks || allBooks;
+
+            // If locked and not searching, only show 6
+            if (!isUnlocked && !filteredBooks) {
+                booksToDisplay = allBooks.slice(0, 6);
+                unlockContainer.classList.remove('hidden');
+            } else if (isUnlocked) {
+                unlockContainer.classList.remove('hidden');
+            } else if (filteredBooks) {
+                unlockContainer.classList.add('hidden');
+            }
+
+            if (booksToDisplay.length === 0) {
                 emptyState.classList.remove('hidden');
+                unlockContainer.classList.add('hidden');
                 return;
             }
             emptyState.classList.add('hidden');
 
-            books.forEach((book) => {
+            booksToDisplay.forEach((book) => {
                 const card = document.createElement('div');
-                card.className = 'book-card p-6 rounded-2xl group cursor-pointer';
+                card.className = 'book-card p-6 rounded-2xl group cursor-pointer relative';
                 
                 card.innerHTML = `
-                    <div class="flex flex-col justify-center h-full">
-                        <div class="flex justify-between items-start">
-                             <h2 class="text-[15px] font-semibold leading-relaxed group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors pr-4">
+                    <div class="flex flex-col justify-between h-full">
+                        <div class="flex justify-between items-start mb-6">
+                             <h2 class="text-[14px] font-semibold leading-relaxed group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors pr-4">
                                 ${book.title}
                             </h2>
                             <i class="fas fa-arrow-right text-[10px] text-slate-300 group-hover:text-blue-500 group-hover:translate-x-1 transition-all mt-1 shrink-0"></i>
                         </div>
+                        <div class="flex justify-end">
+                            <button class="share-btn p-2 -mr-2 text-slate-300 hover:text-blue-500 transition-colors" title="Share Document">
+                                <i class="fas fa-share-nodes text-xs"></i>
+                            </button>
+                        </div>
                     </div>
                 `;
 
+                // Card click opens book
                 card.onclick = () => window.open(book.url, '_blank');
+
+                // Share button logic
+                const shareBtn = card.querySelector('.share-btn');
+                shareBtn.onclick = (e) => {
+                    e.stopPropagation(); // Don't open book
+                    copyToClipboard(book.url);
+                };
+
                 grid.appendChild(card);
             });
         }
 
-        function updateStats(count) {
-            // Keep static label as requested
-            document.getElementById('stats-label').innerText = "LAW LIBRARY";
+        function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            el.setAttribute('readonly', '');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            showToast("Document link copied");
         }
 
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.innerText = message;
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.remove('opacity-0');
+                toast.classList.add('opacity-100');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.classList.add('hidden'), 300);
+            }, 2500);
+        }
+
+        // Lock Code Logic
+        document.getElementById('unlock-btn').onclick = () => {
+            attemptUnlock();
+        };
+
+        document.getElementById('lock-code').onkeypress = (e) => {
+            if (e.key === 'Enter') attemptUnlock();
+        };
+
+        function attemptUnlock() {
+            const input = document.getElementById('lock-code');
+            const code = input.value.trim();
+            
+            const now = new Date();
+            const d = String(now.getDate()).padStart(2, '0');
+            const m = String(now.getMonth() + 1).padStart(2, '0');
+            const y = now.getFullYear();
+            const correctCode = `${d}${m}${y}`;
+            
+            if (code === correctCode) {
+                isUnlocked = true;
+                document.getElementById('unlock-section').classList.add('hidden');
+                document.getElementById('unlocked-badge').classList.remove('hidden');
+                renderLibrary();
+            } else {
+                input.classList.add('border-red-500');
+                input.value = "";
+                setTimeout(() => {
+                    input.classList.remove('border-red-500');
+                }, 1000);
+            }
+        }
+
+        // Search Logic
         document.getElementById('search-input').oninput = (e) => {
             const term = e.target.value.toLowerCase();
+            if (term === "") {
+                renderLibrary();
+                return;
+            }
             const filtered = allBooks.filter(book => 
                 book.title.toLowerCase().includes(term)
             );
