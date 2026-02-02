@@ -1,77 +1,26 @@
-# Karnataka Judicial Academy – Articles (with PDF Links)
-
-Below are the articles listed on the Karnataka Judicial Academy “Articles” page, with placeholders for PDF links.  
-Replace each placeholder URL with the actual PDF hyperlink after opening the respective article.
-
-1. Hindu Succession Act  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-36)
-
-2. Appointment of Commissioner  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-37)
-
-3. Arbitration and Conciliation Act, 1996  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-38)
-
-4. Commercial Courts Act  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-39)
-
-5. Execution of Decrees  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-40)
-
-6. Negotiable Instruments Act  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-41)
-
-7. Proof of Documents  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-42)
-
-8. Wild Life Protection Act  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-43)
-
-9. Defects in Investigation  
-   - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-44)
-
-10. The Road to Justice  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-45)
-
-11. Citizenship – Rights & Duties  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-46)
-
-12. Locating Victim under the Criminal Justice System  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-47)
-
-13. Law and Judicial System for Next Society  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-48)
-
-14. Strengthening the Justice Delivery System – Tools and Techniques  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-49)
-
-15. Strengthening Justice Delivery System – Some Challenges and Solutions  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-50)
-
-16. Victim Compensation in Criminal Justice System  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-51)
-
-17. Fundamental Duties  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-52)
-
-18. Mental Illness as Defence  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-53)
-
-19. Proof beyond Reasonable Doubt  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-54)
-
-20. Salient Features in Investigation, Prosecution and Trial of Cases under POCSO Act, 2012  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-55)
-
-21. Role of Principal District Judges in Galvanizing District Judiciary  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-56)
-
-22. Dying Declaration – Its Applicability in Criminal Cases  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-57)
-
-23. Sentencing in Criminal Cases with Special Reference to the Prevention of Corruption Act  
-    - [PDF Link](https://judiciary.karnataka.gov.in/path-to-pdf-58)
-
+[Hindu Succession Act](https://judiciary.karnataka.gov.in/path-to-pdf-36)  
+[Appointment of Commissioner](https://judiciary.karnataka.gov.in/path-to-pdf-37)  
+[Arbitration and Conciliation Act, 1996](https://judiciary.karnataka.gov.in/path-to-pdf-38)  
+[Commercial Courts Act](https://judiciary.karnataka.gov.in/path-to-pdf-39)  
+[Execution of Decrees](https://judiciary.karnataka.gov.in/path-to-pdf-40)  
+[Negotiable Instruments Act](https://judiciary.karnataka.gov.in/path-to-pdf-41)  
+[Proof of Documents](https://judiciary.karnataka.gov.in/path-to-pdf-42)  
+[Wild Life Protection Act](https://judiciary.karnataka.gov.in/path-to-pdf-43)  
+[Defects in Investigation](https://judiciary.karnataka.gov.in/path-to-pdf-44)  
+[The Road to Justice](https://judiciary.karnataka.gov.in/path-to-pdf-45)  
+[Citizenship-Rights & Duties](https://judiciary.karnataka.gov.in/path-to-pdf-46)  
+[Locating victim under the Criminal Justice system](https://judiciary.karnataka.gov.in/path-to-pdf-47)  
+[Law and Judicial System for Next Society](https://judiciary.karnataka.gov.in/path-to-pdf-48)  
+[Strengthening the Justice Delivery System - Tools and Techniques](https://judiciary.karnataka.gov.in/path-to-pdf-49)  
+[Strengthening Justice Delivery System - Some Challenges and Solutions](https://judiciary.karnataka.gov.in/path-to-pdf-50)  
+[Victim Compensation in Criminal Justice System](https://judiciary.karnataka.gov.in/path-to-pdf-51)  
+[Fundamental Duties](https://judiciary.karnataka.gov.in/path-to-pdf-52)  
+[Mental Illness as Defence](https://judiciary.karnataka.gov.in/path-to-pdf-53)  
+[Proof beyond Reasonable Doubt](https://judiciary.karnataka.gov.in/path-to-pdf-54)  
+[Salient features in investigation, prosecution and trial of cases under POCSO Act - 2012](https://judiciary.karnataka.gov.in/path-to-pdf-55)  
+[Role of Principal District Judges in Galvanizing District Judiciary](https://judiciary.karnataka.gov.in/path-to-pdf-56)  
+[Dying Declaration - Its applicability in Criminal Cases](https://judiciary.karnataka.gov.in/path-to-pdf-57)  
+[Sentencing in Criminal Cases with Special reference to the Prevention of Corruption Act](https://judiciary.karnataka.gov.in/path-to-pdf-58)
 [Handbook on “Understanding the IBC: Key Jurisprudence and Practical Considerations](https://ibbi.gov.in/publication/study-materials)
 [Supreme Court of India on RTI Subject Wise (2005-2023](https://cic.gov.in/sites/default/files/court%20orders/SCF.pdf)
 [Landmark Cases of Supreme Court of India on RTI (2005-2023](https://cic.gov.in/sites/default/files/court%20orders/SCF%20final_merged.pdf)
