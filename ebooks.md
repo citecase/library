@@ -1,5 +1,5 @@
 [Making of the Constitution](https://eparlib.sansad.in/bitstream/123456789/761232/1/Making_of_a_Constitution_combined_PDF-A_Final.pdf)
-[Original Handwritten Constitution]((https://aphc.gov.in/COI/mobile/index.html)
+[Original Handwritten Constitution](https://aphc.gov.in/COI/mobile/index.html)
 [Police Manual For Media Briefing” prepared by Senior Advocate Gopal Sankaranaryanan (Amicus Curiae in Peoples Union for Civil Liberties v. State of Maharashtra; 2026 INSC 79 )](https://www.caseciter.com/content/files/2026/02/Police-Manual-For-Briefing-.pdf)
 [An Analysis on Registration of Non-Cognizable offences  Under COTPA, 2003 and Process of Investigation Thereof - Ba. Dhaarani, B.S.L. LL.B.,  D.T.L., Judicial Magistrate No.I, Chidambaram](https://www.tnsja.tn.gov.in/article/An-Analysis-on-Registration-of-Non-Cognizable-Offences-Under-COTPA,%202003-and-Process-of-Investigation-Thereof.pdf)  
 [The Role, duties and procedural functions of  Family Courts - Mr.A.SARAVANA KUMAR, B.A.B.L., Chairman/District  Judge, TNSTAT,  Chennai, Tamil  Nadu Judiciary](https://www.tnsja.tn.gov.in/article/The-Role-duties-and-procedural-functions-of-Family-Courts-article.pdf)  
