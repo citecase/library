@@ -1,3 +1,6 @@
+
+[e-Book for Advocates](https://ijtr.nic.in/ebook_adv.pdf)
+[e-Book- Handbook on Arbitration Lawby Justice S.U.Khan](https://ijtr.nic.in/ebook_arbitration.pdf)
 [Making of the Constitution](https://eparlib.sansad.in/bitstream/123456789/761232/1/Making_of_a_Constitution_combined_PDF-A_Final.pdf)
 [Original Handwritten Constitution](https://aphc.gov.in/COI/mobile/index.html)
 [Reading Material on Criminal Trial: Part 1](http://jajharkhand.in/wp/wp-content/uploads/2021/02/RM_Criminal_Trial_Vol_1.pdf)  
@@ -259,12 +262,7 @@ Nyay Vyavahar Kosh (Dictionary Of Legal Terms): [Nyay Vyavahar Kosh (Dictionary 
 [Recording of Child Victim Statement (164 Cr.P.C) - Ms. R.Malathi, M.L.](https://www.tnsja.tn.gov.in/article/RCVS_164.pdf)  
 [The Nerve to Cock a Snook at Corona - Ms. Sree Vidya Saravanan,  Additional Sub Judge, Namakkal](https://www.tnsja.tn.gov.in/article/NCSC.pdf)  
 [The Verdict of a Jury – An Analytical Insight into 12 Angry Men (1957) - Ms. Sree Vidya Saravanan, Principal Asst.Sessions Judge, Namakkal](https://www.tnsja.tn.gov.in/article/THE_VERDICT_OF_A_JURY.pdf)  
-[The Criminal Rules of Practice, 2019](https://www.tnsja.tn.gov.in/article/CRIMERULEOFP2019.pdf)  
-[Criminal Rules of Practice and Circular Orders, 1958, framed under the old code of Criminal Procedure, 1898](https://www.tnsja.tn.gov.in/article/CRPCO1958.pdf)  
-[Madras Regulations 1802,1803 and 1804](https://www.tnsja.tn.gov.in/article/Madras-Regulations-1802-1803-1804.pdf)  
-[Court Management through JustIS Mobile App - Ms. R.Arulmozhiselvi, Ubuntu-cum-CIS Master Trainer, Civil Judge Senior Division](https://www.tnsja.tn.gov.in/article/Court%20Management_JustIS.pdf)  
-[Mayooram Munsif Vedhanayagam Pillai - Ravsahib Ku. Arunachala Gaunder](https://www.tnsja.tn.gov.in/article/Mayuram_Vedhanayaga_Pillai.pdf)  
-[Needhinool - Mayooram Munsif Vedhanayagam Pillai](https://www.tnsja.tn.gov.in/article/Nitinul.pdf)  
+[e-Book -Handbook on PCPNDT Act, 1994](https://ijtr.nic.in/ebook_pcpndt.pdf)
  
 
 
