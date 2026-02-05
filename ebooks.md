@@ -263,6 +263,6 @@ Nyay Vyavahar Kosh (Dictionary Of Legal Terms): [Nyay Vyavahar Kosh (Dictionary 
 [The Nerve to Cock a Snook at Corona - Ms. Sree Vidya Saravanan,  Additional Sub Judge, Namakkal](https://www.tnsja.tn.gov.in/article/NCSC.pdf)  
 [The Verdict of a Jury – An Analytical Insight into 12 Angry Men (1957) - Ms. Sree Vidya Saravanan, Principal Asst.Sessions Judge, Namakkal](https://www.tnsja.tn.gov.in/article/THE_VERDICT_OF_A_JURY.pdf)  
 [e-Book -Handbook on PCPNDT Act, 1994](https://ijtr.nic.in/ebook_pcpndt.pdf)
- 
+[Deeper Comprehension of Doctrine of PRECEDENT Through Questionnaire](https://gsja.nic.in/gsjanew/files/NewDeeper%20Comprehension.pdf)
 
 
