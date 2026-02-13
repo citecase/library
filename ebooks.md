@@ -1,4 +1,4 @@
-
+[Guidelines For Designation Of Senior Advocates By The Supreme Court Of India, 2026](https://cdn.s3waas.gov.in/s3ec0490f1f4972d133619a60c30f3559e/uploads/2026/02/2026021177.pdf)
 [e-Book for Advocates](https://ijtr.nic.in/ebook_adv.pdf)
 [e-Book- Handbook on Arbitration Lawby Justice S.U.Khan](https://ijtr.nic.in/ebook_arbitration.pdf)
 [Making of the Constitution](https://eparlib.sansad.in/bitstream/123456789/761232/1/Making_of_a_Constitution_combined_PDF-A_Final.pdf)
